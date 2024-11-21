@@ -1,18 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
 /* Reset and Base Styling */
 body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Nunito', Arial, sans-serif;
   background-color: #ffffff;
   color: #212121;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
 }
 
 /* Navbar */
@@ -21,6 +16,13 @@ body, html {
   display: flex;
   justify-content: center;
   padding: 1.5rem 2rem;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .brand {
@@ -75,4 +77,87 @@ body, html {
 
 .logout-button:hover {
   background-color: #16a085;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 100px; /* Adjust spacing on both sides */
+  background-color: #ffffff;
+}
+
+.navbar-left .brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 30px; /* Adjust logo spacing */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Space between nav links and the sign-up button */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px; /* Space between links */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 60px; /* Adjust sign-up button spacing */
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #555;
+  margin-top: 1rem;
+  line-height: 1.6;
+  max-width: 600px; /* Ensure the text doesn't stretch too wide */
+  margin-left: auto;
+  margin-right: auto; /* Center align the text */
 }
